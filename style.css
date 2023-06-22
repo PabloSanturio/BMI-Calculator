@@ -211,3 +211,11 @@
                 
             }
         }
+
+
+        @media (min-width: 1500px ) {
+              .resultSection__img   {
+               height: 50vh;
+               width: 50vw;
+              }
+        }

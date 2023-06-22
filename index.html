@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Mass Index (BMI) Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="headerinfo">
+            <div class="headerinfo__background"></div>
+            <div class="headerinfo__paddingText">
+                <h1 class="headerinfo__title">Body Mass Index Calculator</h1>
+                <p>
+                    Better understand your weight in relation to your height using our
+                    body mass index (BM) calculator. While BMI is not the sole
+                    determinant of a healthy weight, it offers a valuable starting point
+                    to evaluate your overall health and well-being.
+                </p>
+            </div>
+
+        </header>
+        <div class="containerCentered">
+
+            <!-- Header -->
+
+
+
+            <!-- Calculator -->
+
+            <div class="calculator">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" placeholder="enter your weight" />
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" placeholder="enter your height" />
+
+                <button onclick="calculateBMI()">Calculate BMI</button>
+
+                <div class="result" id="result"></div>
+            </div>
+
+            <!-- Result Section -->
+
+            <section class="resultSection">
+                <img class="resultSection__img"
+                    src="https://img.freepik.com/foto-gratis/joven-mujer-bonita-comiendo-pizza-bar-pizza_1303-20334.jpg?w=2000"
+                    alt="eat" />
+
+                <div>
+                    <h2 class="resultSection__title">What your BMI result means</h2>
+                    <p>
+                        A BMI range of 18.5 to 24.9 is considered a "healthy weight."
+                        Maintaining a healthy weight may lower your chances of
+                        experiencing health issues later on, such as obesity and type 2
+                        diabetes. Aim for a nutritious diet with reduced fat and sugar
+                        content, incorporating ample fruits and vegetables. Additionally,
+                        strive for regular physical activity, ideally about 30 minutes
+                        daily for five days a week.
+                    </p>
+                </div>
+
+                <!-- Advice -->
+                <article class="adviceContainer">
+
+
+                    <div class="advice">
+                        <img class="advice__icon" src="https://cdn-icons-png.flaticon.com/512/4080/4080032.png"
+                            alt="food icon" />
+                        <h2 class="advice__title">Healthy eating</h2>
+
+
+                        <p>
+                            Healthy eating promotes weight control, disease prevention,
+                            better digestion, immunity clarity, and mood.
+                        </p>
+                    </div>
+
+                    <div class="advice">
+                        <img class="advice__icon" src="https://cdn-icons-png.flaticon.com/512/2749/2749777.png"
+                            alt="food icon" />
+                        <h2 class="advice__title">Healthy eating</h2>
+                        <p>
+                            Healthy eating promotes weight control, disease prevention,
+                            better digestion, immunity clarity, and mood.
+                        </p>
+                    </div>
+                    <div class="advice">
+                        <img class="advice__icon"
+                            src="https://www.pngkey.com/png/full/52-528653_moon-moon-icon-icon.png" alt="food icon" />
+                        <h2 class="advice__title">Healthy eating</h2>
+                        <p>
+                            Healthy eating promotes weight control, disease prevention,
+                            better digestion, immunity clarity, and mood.
+                        </p>
+                    </div>
+                </article>
+                <!-- Limitation -->
+                <section class="limitationContainer">
+                    <div class="limitation__info">
+                        <h2 class="limitation__info__title">Limitations of BMI</h2>
+                        <p class="limitation__info__text">
+                            Although BMI is often a practical indicator of healthy weight, it
+                            is not suited for every person. Specific groups should carefully
+                            consider their BMI outcomes, and in certain cases, the measurement
+                            may not be beneficial to use.
+                        </p>
+                    </div>
+
+                    <div class="limitation__card">
+
+                        <h2 class="limitation__titlecard"> <img class="limitation__icon"
+                                src="https://www.pngall.com/wp-content/uploads/5/Gender-PNG-Image-File.png"
+                                alt="">Gender</h2>
+                        <p>
+                            The development and body fat composition of girls and boys vary
+                            with age. Consequently, a child's age and gender are considered
+                            when evaluating their BMI.
+                        </p>
+                    </div>
+                    <div class="limitation__card">
+
+                        <h2 class="limitation__titlecard"> <img class="limitation__icon"
+                                src="https://cdn-icons-png.flaticon.com/512/1075/1075906.png" alt="">Age</h2>
+                        <p>
+                            The development and body fat composition of girls and boys vary
+                            with age. Consequently, a child's age and gender are considered
+                            when evaluating their BMI.
+                        </p>
+                    </div>
+                    <div class="limitation__card">
+
+                        <h2 class="limitation__titlecard"> <img class="limitation__icon"
+                                src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/1410330/muscle-clipart-md.png"
+                                alt="">Muscle</h2>
+                        <p>
+                            The development and body fat composition of girls and boys vary
+                            with age. Consequently, a child's age and gender are considered
+                            when evaluating their BMI.
+                        </p>
+                    </div>
+                    <div class="limitation__card">
+
+                        <h2 class="limitation__titlecard"> <img class="limitation__icon"
+                                src="https://cdn-icons-png.flaticon.com/512/7214/7214819.png" alt="">Pregnancy</h2>
+                        <p>
+                            The development and body fat composition of girls and boys vary
+                            with age. Consequently, a child's age and gender are considered
+                            when evaluating their BMI.
+                        </p>
+                    </div>
+                    <div class="limitation__card">
+
+                        <h2 class="limitation__titlecard"> <img class="limitation__icon"
+                                src="https://cdni.iconscout.com/illustration/premium/thumb/boy-running-in-marathon-race-6618513-5628648.png?f=webp"
+                                alt="">Race
+                        </h2>
+                        <p>
+                            The development and body fat composition of girls and boys vary
+                            with age. Consequently, a child's age and gender are considered
+                            when evaluating their BMI.
+                        </p>
+                    </div>
+
+
+                </section>
+            </section>
+        </div>
+    </div>
+    <script>
+        function calculateBMI() {
+            let weight = parseFloat(document.getElementById("weight").value);
+            let height = parseFloat(document.getElementById("height").value) / 100; // Convert to meters
+
+            if (weight && height) {
+                let bmi = weight / (height * height);
+                let resultElement = document.getElementById("result");
+
+                if (bmi < 18.5) {
+                    resultElement.innerHTML =
+                        "Your Body Mass Index (BMI) is: " +
+                        bmi.toFixed(2) +
+                        " - Underweight";
+                    resultElement.className = "result low";
+                } else if (bmi >= 18.5 && bmi < 25) {
+                    resultElement.innerHTML =
+                        "Your Body Mass Index (BMI) is: " +
+                        bmi.toFixed(2) +
+                        " - Normal weight";
+                    resultElement.className = "result";
+                } else {
+                    resultElement.innerHTML =
+                        "Your Body Mass Index (BMI) is: " +
+                        bmi.toFixed(2) +
+                        " - Overweight";
+                    resultElement.className = "result high";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

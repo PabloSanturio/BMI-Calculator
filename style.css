@@ -1,0 +1,213 @@
+
+       /* Globals */
+       *    {
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-size: 19px;
+        color: rgb(84, 82, 82);
+       }
+       
+      
+       .container   {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       }
+
+       .containerCentered  {
+        margin: 0% 5% 0 5%
+       }
+
+
+       /* Header */
+
+       .headerinfo  {
+        text-align: center;
+        position: relative;
+       }
+
+       .headerinfo__background  {
+       position: absolute;
+       
+       top: 0px;
+       border-radius: 0px  0px 50px 0px ;
+        height: 550px;
+        width: 100vw;
+        z-index: -1;
+
+        background-image: url(https://img.freepik.com/fotos-premium/fondo-azul-bokeh-elemento-disenonatura-fondo-azul-borroso_49507-3311.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 400px;
+       }
+       
+       .headerinfo__paddingText {
+        padding: 0% 5% 0 5%
+       }
+
+       .headerinfo__title   {
+        padding: 10px 15px 10px 15px;
+        font-size: 50px;
+       }
+
+       
+
+       /* Calculator */
+       
+        .calculator {
+            margin: 50px auto;
+            width: 300px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .calculator label {
+            display: block;
+            padding-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .calculator input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        .calculator button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1e6397;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .result.low {
+            color: #4CAF50;
+        }
+
+        .result.high {
+            color: #F44336;
+        }
+
+
+        /* result section */
+
+        .resultsection  {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .resultSection__img    {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .resultSection__title   {
+            font-size: 35px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+
+        /* advice */
+
+        .adviceContainer {
+            margin-top: 50px;
+        }
+        
+        .advice {  
+            margin-top: 25px;
+            margin-bottom: 25px;
+            background-color: #eaf3fa;
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+        .advice__icon {
+            height: 50px;
+            margin-bottom: 15px;
+        }
+        
+        .advice__title   {
+          margin-bottom: 15px;
+        }
+
+
+        /* Limitation Section */
+
+        .limitationContainer    {
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+
+        .limitation__info{
+            margin-bottom: 40px;
+        }
+
+        .limitation__info__title  {
+            text-align: center;
+            font-size: 35px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+           
+        }
+
+        .limitation__info__text   {
+            text-align: center;
+        }
+
+        .limitation__card   {
+            border-radius: 12px;
+            box-shadow: 9px 18px 14px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .limitation__titlecard  {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .limitation__icon   {
+            height: 25px;
+            padding-right: 10px;
+        
+        }
+
+
+        /* MQs */
+
+        @media (min-width: 600px ) {
+            .calculator {
+                width: 370px;
+            }  
+        }
+
+        @media (min-width: 800px) {
+            .calculator {
+                width: 470px;
+            }  
+
+            .resultSection__img{
+                max-width: 85%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
+        }
